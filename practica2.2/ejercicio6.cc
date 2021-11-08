@@ -1,1 +1,1 @@
-umask 0027
+umask 0022
