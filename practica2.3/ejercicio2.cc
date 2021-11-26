@@ -8,7 +8,7 @@ int main(int argc, char **argv){
     return -1;
   }
   
-  int pid = atoi(argv[1]);
+  int pid = atoi(argv[0]);
   int scheduler = sched_getscheduler(pid);
   
   switch (scheduler){
