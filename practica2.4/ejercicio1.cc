@@ -9,7 +9,7 @@ int main(int argc, char** argv){
   if(argc < 2) printf("ERROR: introduce los comandos\n");
   
   int fd[2];
-  int pie = pipe(fd);
+  int pipe = pipe(fd);
   
   if(pipe(fd) == -1){
     perror("pipe");
