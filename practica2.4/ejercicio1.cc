@@ -11,6 +11,11 @@ int main(int argc, char** argv){
   int fd[2];
   int pie = pipe(fd);
   
+  if(pipe(fd) == -1){
+    perror("pipe");
+    return -1;
+  }
+  
   switch(fork()){
     case -1:
       perror("ERROR: al hacer el fork");
